@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_odoo399_zapatilla399_usuario,odoo399.zapatilla399.usuario,model_odoo399_zapatilla399,odoo399.group_odoo399_usuario,1,0,0,0
+access_odoo399_zapatilla399_administrador,odoo399.zapatilla399.administrador,model_odoo399_zapatilla399,odoo399.group_odoo399_administrador,1,1,1,1_

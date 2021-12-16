@@ -1,0 +1,30 @@
+<odoo>
+    <record id="odoo399.zapatilla399_report" model="ir.actions.report">
+        <field name="name"> Informe de zapatillas</field>
+        <field name="model">odoo399.zapatilla399</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">odoo399.zapatilla399_report_view</field>
+        <field name="report_file">odoo399.zapatilla399_report</field>
+        <field name="binding_model_id" ref="model_odoo399_zapatilla399"/>
+        <field name="binding_type">report</field>
+
+    </record>
+
+    <template id="zapatilla399_report_view">
+        <t t-call="web.html_container">
+            <!-- muestra datos de la empresa (salta página) -->
+            <t t-call="web.external_layout">
+                <h1>zapatilla399s </h1><br />
+                <t t-foreach="docs" t-as="zapatilla399">
+                    <ul>
+                        <li>    name <span t-field="zapatilla399.name" /></li>
+                        <li>    modelo <span t-field="zapatilla399.modelo" /></li>
+                        <li>    marca <span t-field="zapatilla399.marca" /></li>
+
+                    </ul>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>
